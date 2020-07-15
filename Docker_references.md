@@ -3,40 +3,40 @@
 
 - docker info —>info about how many containers,images e.t.c
 - docker <mngmt commands><sub-commands><options> —>docker command format , older way is - -docker <command><options> ((both works)
-- docker container run --publish 80:80 --detach nginx —> to start container in background
-- docker container ls. —> list of containers(use -a to list all containers)
-- docker container stop {container_id} -> to stop a container
-- docker container logs {containerName} to see the logs
-- docker container top {container Name) —> list the processes running in docker container
-- docker container rm -f(to forcibly remove a container even if it is running)
-- docker container inspect — details and configuration of a container
-- docker container stats — live performance statistics of a container
-- docker container update --help —> Update configuration of one or more containers even if they are running
+- docker run --publish 80:80 --detach nginx —> to start container in background
+- docker ls. —> list of containers(use -a to list all containers)
+- docker stop {container_id} -> to stop a container
+- docker logs {containerName} to see the logs
+- docker top {container Name) —> list the processes running in docker container
+- docker rm -f(to forcibly remove a container even if it is running)
+- docker inspect — details and configuration of a container
+- docker stats — live performance statistics of a container
+- docker update --help —> Update configuration of one or more containers even if they are running
 
 ## Docker shell commands:
 
-- docker container run -it —> start new container interactively
-- docker container run exec -it —> run additional commands inside container (exec runs only inside a cotainer which is already started)
-- docker container run --rm -it --name ununtu ubuntu:14.04 bash(to run bash command at the time of container creation, exec works only on already running/stopped containers)
-- docker container run -it --name nginx nginx bash -> to run bash shell without SSH
-- docker container start -ai {containerName} —> to start container in shell mode if it is stopped
-- docker container exec -it {containerId} bash—>Run a command in a running container —> when we exit from this shell, container wont stop bcz exec will start additional process and it wont effect existing one
+- docker run -it —> start new container interactively
+- docker run exec -it —> run additional commands inside container (exec runs only inside a cotainer which is already started)
+- docker run --rm -it --name ununtu ubuntu:14.04 bash(to run bash command at the time of container creation, exec works only on already running/stopped containers)
+- docker run -it --name nginx nginx bash -> to run bash shell without SSH
+- docker start -ai {containerName} —> to start container in shell mode if it is stopped
+- docker exec -it {containerId} bash—>Run a command in a running container —> when we exit from this shell, container wont stop bcz exec will start additional process and it wont effect existing one
 
 ## Docker Networking:
 
-- docker container port {container} —> to get the port number on which we are mapping the traffic
-- docker container inspect --format '{{ .NetworkSettings.IPAddress }}' {conainerId} —> to get IP address of a container
+- docker port {container} —> to get the port number on which we are mapping the traffic
+- docker inspect --format '{{ .NetworkSettings.IPAddress }}' {conainerId} —> to get IP address of a container
 - docker network ls - to get the list of N/W’s
 - docker network inspect {networkName} —> we can see images in this command output id they r mapped
 - docker network create {networkName} —> to create a network, which will create with default driver bridge, we can use —driver to specify the driver, otherwise default option it will take(bridge)
-- docker container run -p 81:80 --name nginx2 --network {networkName} -d nginx (to create with specific network}
+- docker run -p 81:80 --name nginx2 --network {networkName} -d nginx (to create with specific network}
 - docker network connect {netwrokId} {containerId}, use disconnect in place of connect to disconnect from a network
 
 ## Docker networkd:DNS
 
 - docker exec -it {containerName} ping {anotherContainer}— using this we can ping another a container from other container(prerequistie: they both should be in same network) using built in DNS network
-- docker container run --network-alias search --net test -d elasticsearch:2 —> to create a container with DNS alias(—network-alias) and with network test
-- docker container run --rm --net test alpine nslookup search —> it will search for nslookup DNS entry “search” inside that n/w
+- docker run --network-alias search --net test -d elasticsearch:2 —> to create a container with DNS alias(—network-alias) and with network test
+- docker run --rm --net test alpine nslookup search —> it will search for nslookup DNS entry “search” inside that n/w
 - If we run “docker container run --rm --net test centos curl -s search:9200” it will give different different outputs between two DNS servers
 
 ## Docker Images:
@@ -62,7 +62,7 @@
 
 ## Bind Mount:
 
-- docker container run -d --name nginx -p 80:80 -v $(pwd):/usr/share/nginx/html nginx —> mounting a directory
+- docker run -d --name nginx -p 80:80 -v $(pwd):/usr/share/nginx/html nginx —> mounting a directory
 
 ## Docker Compose:
 
