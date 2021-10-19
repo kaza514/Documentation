@@ -5,7 +5,7 @@ docker search httpd
 ```
 2. Download a docker image from hub.docker.com
 ```sh
-docker image pull <image_name>:<image_version/tag>
+docker pull <image_name>:<image_version/tag>
 ```
 
 3. List out docker images from your local system
