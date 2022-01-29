@@ -38,6 +38,18 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
 1. Get the latest version of jenkins from https://pkg.jenkins.io/redhat-stable/ and install
    ```sh
    yum -y install wget
+   
+   ```sh
+   vim /etc/yum.repos.d/epelfordaemonize.repo
+   [daemonize]
+   baseurl=https://download-ib01.fedoraproject.org/pub/epel/7/x86_64/
+   gpgcheck=no
+   enabled=yes
+   ```
+   ```sh
+   yum install daemonize -y
+   ```
+   ```sh
    sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
    sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
    yum -y install jenkins
