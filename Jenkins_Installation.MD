@@ -45,8 +45,8 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    baseurl=https://download-ib01.fedoraproject.org/pub/epel/7/x86_64/
    gpgcheck=no
    enabled=yes
-   ```
-   ```sh
+
+
    yum install daemonize -y
    ```
    ```sh
