@@ -29,7 +29,6 @@ Login to Jenkins to integrate Artifactory with Jenkins
      - Git URL : [get URL here](https://github.com/kaza514/hello-world.git)
  - Build Environment 
      - Maven3-Artifactory Integration : `<provide Artifactory server and repository details
->`
  - Build --> Invoke Artifactory Maven3  
        - Goals: ` clean install`
 
