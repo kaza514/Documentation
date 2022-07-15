@@ -1,0 +1,21 @@
+--------------steps to create repository-------------------------------------
+after successfully login to ec2-server
+1.First we have create a repository in git hub.
+2.next we have to create a folder in local repository, name as is repository name
+3.after that we have intialize the git
+========>git init
+4.next we have add the files into stagging area by using below command
+========> git add folder/file/ .
+5.after that we have to commit the files
+========> git commit -m "any name"
+6.we have to add repository remotely by below command
+========> git remote add origin <repository url>
+7.next we have to push the files by below command.
+========> git push origin <branch name>
+8.here asking git hub credentials
+username:mail
+password:token-key
+===================================================================================
+Token key generation:
+log in to github-->click on your profile-->settings-->developer seetings-->personal token access
+next create token and give access repo and create a key
