@@ -52,7 +52,7 @@ tail -f file — output the contents of file as it grows, starting with the last
 
 vim file — edit file
 
-alias name 'command' — create an alias for a command
+alias name='command' — create an alias for a command
 
 SYSTEM
 
@@ -64,7 +64,7 @@ date — show the current date and time
 
 whoami — who you are logged in as
 
-finger user — display information about user
+id user — display information about user
 
 man command — show the manual for command
 
