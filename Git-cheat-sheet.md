@@ -2,32 +2,32 @@
 ### Core
 
    ```sh
-git init
-git clone
-git add
-git commit
-git status
-git diff
-git checkout
-git reset
-git log
-git show
-git tag
-git push
-git pull
+$ git init
+$ git clone
+$ git add
+$ git commit
+$ git status
+$ git diff
+$ git checkout
+$ git reset
+$ git log
+$ git show
+$ git tag
+$ git push
+$ git pull
    ```
 
 
 ### Branching
 
    ```sh
-git branch
-git checkout -b
-git merge
-git rebase
-git branch --set-upstream-to
-git branch --unset-upstream
-git cherry-pick
+$ git branch
+$ git checkout -b
+$ git merge
+$ git rebase
+$ git branch --set-upstream-to
+$ git branch --unset-upstream
+$ git cherry-pick
    ```
 
 ### Merging
