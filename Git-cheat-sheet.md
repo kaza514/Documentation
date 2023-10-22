@@ -1,7 +1,7 @@
 ===================
 ### Core
 ===================
-
+   ```sh
 git init
 git clone
 git add
@@ -15,11 +15,11 @@ git show
 git tag
 git push
 git pull
-
+   ```
 ===================
 ### Branching
 ===================
-
+   ```sh
 git branch
 git checkout -b
 git merge
@@ -27,26 +27,28 @@ git rebase
 git branch --set-upstream-to
 git branch --unset-upstream
 git cherry-pick
-
+   ```
 ===================
 ### Merging
 ===================
+   ```sh
 git merge
 git rebase
-
+   ```
 ===================
 ###. Stashing
 ===================
+   ```sh
 git stash
 git stash pop
 git stash list
 git stash apply
 git stash drop
-
+   ```
 ===================
 ###   Remotes
 ===================
-
+   ```sh
 git remote
 git remote add
 git remote remove
@@ -54,19 +56,19 @@ git fetch
 git pull
 git push
 git clone --mirror
-
+   ```
 ===================
 ### Configuration
 ===================
-
+   ```sh
 git config
 git global config
 git reset config
-
+   ```
 ===================
 ### Plumbing
 ===================
-
+   ```sh
 git cat-file
 git checkout-index
 git commit-tree
@@ -83,11 +85,11 @@ git show-ref
 git symbolic-ref
 git tag --list
 git update-ref
-
+   ```
 ===================
 ### Porcelain
 ===================
-
+   ```sh
 git blame
 git bisect
 git checkout
@@ -102,21 +104,23 @@ git rebase
 git reset
 git show
 git tag
-
+   ```
 ===================
 ### Alias
 ===================
-
+   ```sh
 git config --global alias.<alias> <command>
-
+   ```
 ===================
 ### Hook
 ===================
+   ```sh
 git config --local core.hooksPath <path>
-
+   ```
 ===================
 ### Experimental: (May not be fully Supported)
 ===================
+   ```sh
 git annex
 git am
 git cherry-pick --upstream
@@ -165,3 +169,4 @@ git unpack-file
 git update-index
 git verify-pack
 git worktree
+   ```
