@@ -33,59 +33,59 @@ $ git cherry-pick
 ### Merging
 
    ```sh
-git merge
-git rebase
+$  git merge
+$  git rebase
    ```
 
 ### Stashing
 
    ```sh
-git stash
-git stash pop
-git stash list
-git stash apply
-git stash drop
+$  git stash
+$  git stash pop
+$  git stash list
+$  git stash apply
+$  git stash drop
    ```
 
 ###  Remotes
 
    ```sh
-git remote
-git remote add
-git remote remove
-git fetch
-git pull
-git push
-git clone --mirror
+$  git remote
+$  git remote add
+$  git remote remove
+$  git fetch
+$  git pull
+$  git push
+$  git clone --mirror
    ```
 
 ### Configuration
 
    ```sh
-git config
-git global config
-git reset config
+$  git config
+$  git global config
+$  git reset config
    ```
 
 ### Plumbing
 
    ```sh
-git cat-file
-git checkout-index
-git commit-tree
-git diff-tree
-git for-each-ref
-git hash-object
-git ls-files
-git ls-remote
-git merge-tree
-git read-tree
-git rev-parse
-git show-branch
-git show-ref
-git symbolic-ref
-git tag --list
-git update-ref
+$  git cat-file
+$  git checkout-index
+$  git commit-tree
+$  git diff-tree
+$  git for-each-ref
+$  git hash-object
+$  git ls-files
+$  git ls-remote
+$  git merge-tree
+$  git read-tree
+$  git rev-parse
+$  git show-branch
+$  git show-ref
+$  git symbolic-ref
+$  git tag --list
+$  git update-ref
    ```
 
 ### Porcelain
