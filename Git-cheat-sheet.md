@@ -1,5 +1,5 @@
 
-1. Core
+### Core
 
    ```sh
 git init
@@ -17,7 +17,8 @@ git push
 git pull
    ```
 
-1. Branching
+
+### Branching
 
    ```sh
 git branch
@@ -29,14 +30,14 @@ git branch --unset-upstream
 git cherry-pick
    ```
 
-1. Merging
+### Merging
 
    ```sh
 git merge
 git rebase
    ```
 
-1. Stashing
+### Stashing
 
    ```sh
 git stash
@@ -46,7 +47,7 @@ git stash apply
 git stash drop
    ```
 
-1.   Remotes
+###  Remotes
 
    ```sh
 git remote
@@ -58,7 +59,7 @@ git push
 git clone --mirror
    ```
 
-1. Configuration
+### Configuration
 
    ```sh
 git config
@@ -66,7 +67,7 @@ git global config
 git reset config
    ```
 
-1. Plumbing
+### Plumbing
 
    ```sh
 git cat-file
@@ -87,7 +88,7 @@ git tag --list
 git update-ref
    ```
 
-1. Porcelain
+### Porcelain
 
    ```sh
 git blame
@@ -106,19 +107,19 @@ git show
 git tag
    ```
 
-1. Alias
+### Alias
 
    ```sh
 git config --global alias.<alias> <command>
    ```
 
-1. Hook
+### Hook
 
    ```sh
 git config --local core.hooksPath <path>
    ```
 
-1. Experimental: (May not be fully Supported)
+### Experimental: (May not be fully Supported)
 
    ```sh
 git annex
