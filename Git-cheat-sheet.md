@@ -1,4 +1,5 @@
 1.Core:
+
 •    git init
 •    git clone
 •    git add
@@ -14,6 +15,7 @@
 •    git pull
 
 2.Branching:
+
 •    git branch
 •    git checkout -b
 •    git merge
@@ -23,10 +25,12 @@
 •    git cherry-pick
 
 3.Merging:
+
 •    git merge
 •    git rebase
 
 4.Stashing:
+
 •    git stash
 •    git stash pop
 •    git stash list
@@ -34,6 +38,7 @@
 •    git stash drop
 
 5.Remotes:
+
 •    git remote
 •    git remote add
 •    git remote remove
@@ -43,11 +48,13 @@
 •    git clone --mirror
 
 6.Configuration:
+
 •    git config
 •    git global config
 •    git reset config
 
 7. Plumbing:
+
 •    git cat-file
 •    git checkout-index
 •    git commit-tree
@@ -66,6 +73,7 @@
 •    git update-ref
 
 8.Porcelain:
+
 •    git blame
 •    git bisect
 •    git checkout
@@ -82,12 +90,15 @@
 •    git tag
 
 9.Alias:
+
 •    git config --global alias.<alias> <command>
 
 10.Hook:
+
 •    git config --local core.hooksPath <path>
 
 11.Experimental: (May not be fully Supported)
+
 •    git annex
 •    git am
 •    git cherry-pick --upstream
